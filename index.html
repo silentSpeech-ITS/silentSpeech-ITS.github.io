@@ -1,1 +1,50 @@
-<h1>silentspeech</h1>
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-color: #1a1a1a;
+        }
+        .box b {
+            font-size: 30px;
+            color: white;
+            font-family:monospace;
+            display: block;
+            position: absolute;
+            -webkit-animation: moveX 2s linear 0s infinite alternate, moveY 3.4s linear 0s infinite alternate;
+            -moz-animation: moveX 2s linear 0s infinite alternate, moveY 3.4s linear 0s infinite alternate;
+            -o-animation: moveX 2s linear 0s infinite alternate, moveY 3.4s linear 0s infinite alternate;
+            animation: moveX 2s linear 0s infinite alternate, moveY 3.4s linear 0s infinite alternate;
+        }
+
+        @-webkit-keyframes moveX {
+        from { left: 0; } to { left: 480px; }
+        }
+        @-moz-keyframes moveX {
+        from { left: 0; } to { left: 480px; }
+        }
+        @-o-keyframes moveX {
+        from { left: 0; } to { left: 480px; }
+        }
+        @keyframes moveX {
+        from { left: 0; } to { left: 480px; }
+        }
+
+        @-webkit-keyframes moveY {
+        from { top: 0; } to { top: 280px; }
+        }
+        @-moz-keyframes moveY {
+        from { top: 0; } to { top: 280px; }
+        }
+        @-o-keyframes moveY {
+        from { top: 0; } to { top: 280px; }
+        }
+        @keyframes moveY {
+        from { top: 0; } to { top: 280px; }
+        }
+    </style>
+</head>
+<body>
+      <div class="box"><b><h1>silentSpeech</h1></b></div>
+</body>
+</html>
