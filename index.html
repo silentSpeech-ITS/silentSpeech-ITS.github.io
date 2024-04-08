@@ -1,50 +1,50 @@
+
 <!DOCTYPE html>
 <html>
 <head>
+    <title>silentSpeech</title>
+    <meta name="description" content="Work in progress">
     <style>
         body {
-            background-color: #1a1a1a;
+            background-color: #efd1a9;
         }
-        .box b {
-            font-size: 30px;
-            color: white;
-            font-family:monospace;
-            display: block;
+        #image {
             position: absolute;
-            -webkit-animation: moveX 2s linear 0s infinite alternate, moveY 3.4s linear 0s infinite alternate;
-            -moz-animation: moveX 2s linear 0s infinite alternate, moveY 3.4s linear 0s infinite alternate;
-            -o-animation: moveX 2s linear 0s infinite alternate, moveY 3.4s linear 0s infinite alternate;
-            animation: moveX 2s linear 0s infinite alternate, moveY 3.4s linear 0s infinite alternate;
-        }
-
-        @-webkit-keyframes moveX {
-        from { left: 0; } to { left: 480px; }
-        }
-        @-moz-keyframes moveX {
-        from { left: 0; } to { left: 480px; }
-        }
-        @-o-keyframes moveX {
-        from { left: 0; } to { left: 480px; }
-        }
-        @keyframes moveX {
-        from { left: 0; } to { left: 480px; }
-        }
-
-        @-webkit-keyframes moveY {
-        from { top: 0; } to { top: 280px; }
-        }
-        @-moz-keyframes moveY {
-        from { top: 0; } to { top: 280px; }
-        }
-        @-o-keyframes moveY {
-        from { top: 0; } to { top: 280px; }
-        }
-        @keyframes moveY {
-        from { top: 0; } to { top: 280px; }
         }
     </style>
 </head>
 <body>
-      <div class="box"><b><h1>silentSpeech</h1></b></div>
+    <img id="image" onclick="egg()" src="assets/logo.gif" width="20%" alt="Bouncing Image">
+    <script>
+        const image = document.getElementById('image');
+        let x = 0;
+        let y = 0;
+        let vx = 5;
+        let vy = 5;
+        function updatePosition() {
+            x += vx;
+            y += vy;
+
+            if (x + image.width >= window.innerWidth || x <= 0) {
+                vx *= -1;
+            }
+            if (y + image.height >= window.innerHeight || y <= 0) {
+                vy *= -1;
+            }
+
+            image.style.left = x + 'px';
+            image.style.top = y + 'px';
+
+            requestAnimationFrame(updatePosition);
+        }
+
+        updatePosition();
+
+        var clicks = 0;
+        function egg() {
+            clicks++;
+            if (clicks==5) document.getElementById('image').src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/DVD_logo.svg/2560px-DVD_logo.svg.png";
+        }
+    </script>
 </body>
 </html>
