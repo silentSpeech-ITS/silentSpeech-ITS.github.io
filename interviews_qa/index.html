@@ -1,0 +1,706 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Domande delle interviste">
+    <title>Domande - silentSpeech</title>
+
+    
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="https://silentspee.ch/interviews_qa/assets/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="https://silentspee.ch/interviews_qa/questions.css" rel="stylesheet">
+  </head>
+  <body class="bg-light">
+    
+<header class="bd-header bg-dark py-3 d-flex align-items-stretch border-bottom border-dark">
+  <div class="container-fluid d-flex align-items-center">
+    <h1 class="d-flex align-items-center fs-4 text-white mb-0">
+      Domande delle interviste
+    </h1>
+    <a href="https://www.silentspee.ch" class="ms-auto link-light" hreflang="ar" target="_blank">silentSpeech Platform</a>
+  </div>
+  </div>
+</header>
+<aside class="bd-aside sticky-xl-top text-muted align-self-start mb-3 mb-xl-5 px-2">
+  <h2 class="h6 pt-4 pb-3 mb-4 border-bottom">Categorie</h2>
+  <nav class="small" id="toc">
+    <ul class="list-unstyled">
+      <li class="my-2">
+        <button class="btn d-inline-flex align-items-center collapsed" data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#esperti-collapse" aria-controls="esperti-collapse">Esperti LIS</button>
+        <ul class="list-unstyled ps-3 collapse" id="esperti-collapse">
+          <li><a class="d-inline-flex align-items-center rounded" href="#esperti_anagrafica">Anagrafica</a></li>
+          <li><a class="d-inline-flex align-items-center rounded" href="#esperti_informazioni">Informazioni importanti</a></li>
+          <li><a class="d-inline-flex align-items-center rounded" href="#esperti_criticita">Criticit&agrave;</a></li>
+          <li><a class="d-inline-flex align-items-center rounded" href="#esperti_spunti">Spunti di riflessione</a></li>
+        </ul>
+      </li>
+      <li class="my-2">
+        <button class="btn d-inline-flex align-items-center collapsed" data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#tecnico-collapse" aria-controls="tecnico-collapse">Tecnico informatico</button>
+        <ul class="list-unstyled ps-3 collapse" id="tecnico-collapse">
+          <li><a class="d-inline-flex align-items-center rounded" href="#tecnico_anagrafica">Anagrafica</a></li>
+          <li><a class="d-inline-flex align-items-center rounded" href="#tecnico_informazioni">Informazioni importanti</a></li>
+          <li><a class="d-inline-flex align-items-center rounded" href="#tecnico_criticita">Criticit&agrave;</a></li>
+          <li><a class="d-inline-flex align-items-center rounded" href="#tecnico_spunti">Spunti di riflessione</a></li>
+        </ul>
+      </li>
+      <li class="my-2">
+        <button class="btn d-inline-flex align-items-center collapsed" data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#istituzioni-collapse" aria-controls="istituzioni-collapse">Istituzioni educative</button>
+        <ul class="list-unstyled ps-3 collapse" id="istituzioni-collapse">
+          <li><a class="d-inline-flex align-items-center rounded" href="#istituzioni_anagrafica">Anagrafica</a></li>
+          <li><a class="d-inline-flex align-items-center rounded" href="#istituzioni_informazioni">Informazioni importanti</a></li>
+          <li><a class="d-inline-flex align-items-center rounded" href="#istituzioni_criticita">Criticit&agrave;</a></li>
+          <li><a class="d-inline-flex align-items-center rounded" href="#istituzioni_spunti">Spunti di riflessione</a></li>
+        </ul>
+      </li>
+      <li class="my-2">
+        <button class="btn d-inline-flex align-items-center collapsed" data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#persone_sorde-collapse" aria-controls="persone_sorde-collapse">Persone sorde</button>
+        <ul class="list-unstyled ps-3 collapse" id="persone_sorde-collapse">
+          <li><a class="d-inline-flex align-items-center rounded" href="#persone_sorde_informazioni">Informazioni importanti</a></li>
+          <li><a class="d-inline-flex align-items-center rounded" href="#persone_sorde_criticita">Criticit&agrave;</a></li>
+          <li><a class="d-inline-flex align-items-center rounded" href="#persone_sorde_spunti">Spunti di riflessione</a></li>
+        </ul>
+      </li>
+      <li class="my-2">
+        <button class="btn d-inline-flex align-items-center collapsed" data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#sanita-collapse" aria-controls="sanita-collapse">Sanità</button>
+        <ul class="list-unstyled ps-3 collapse" id="sanita-collapse">
+          <li><a class="d-inline-flex align-items-center rounded" href="#sanita_anagrafica">Anagrafica</a></li>
+          <li><a class="d-inline-flex align-items-center rounded" href="#sanita_informazioni">Informazioni importanti</a></li>
+          <li><a class="d-inline-flex align-items-center rounded" href="#sanita_criticita">Criticit&agrave;</a></li>
+          <li><a class="d-inline-flex align-items-center rounded" href="#sanita_spunti">Spunti di riflessione</a></li>
+        </ul>
+      </li>
+      <li class="my-2">
+        <button class="btn d-inline-flex align-items-center collapsed" data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#caregiver-collapse" aria-controls="caregiver-collapse">Familiari e caregiver</button>
+        <ul class="list-unstyled ps-3 collapse" id="caregiver-collapse">
+          <li><a class="d-inline-flex align-items-center rounded" href="#caregiver_anagrafica">Anagrafica</a></li>
+          <li><a class="d-inline-flex align-items-center rounded" href="#caregiver_informazioni">Informazioni importanti</a></li>
+          <li><a class="d-inline-flex align-items-center rounded" href="#caregiver_criticita">Criticit&agrave;</a></li>
+          <li><a class="d-inline-flex align-items-center rounded" href="#caregiver_spunti">Spunti di riflessione</a></li>
+        </ul>
+      </li>
+      <li class="my-2">
+        <button class="btn d-inline-flex align-items-center collapsed" data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#pa-collapse" aria-controls="pa-collapse">Pubbliche amministrazioni</button>
+        <ul class="list-unstyled ps-3 collapse" id="pa-collapse">
+          <li><a class="d-inline-flex align-items-center rounded" href="#pa_anagrafica">Anagrafica</a></li>
+          <li><a class="d-inline-flex align-items-center rounded" href="#pa_informazioni">Informazioni importanti</a></li>
+          <li><a class="d-inline-flex align-items-center rounded" href="#pa_criticita">Criticit&agrave;</a></li>
+          <li><a class="d-inline-flex align-items-center rounded" href="#pa_spunti">Spunti di riflessione</a></li>
+        </ul>
+      </li>
+      <li class="my-2">
+        <button class="btn d-inline-flex align-items-center collapsed" data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#comunita-collapse" aria-controls="comunita-collapse">Organizzazioni di comunità</button>
+        <ul class="list-unstyled ps-3 collapse" id="comunita-collapse">
+          <li><a class="d-inline-flex align-items-center rounded" href="#comunita_anagrafica">Anagrafica</a></li>
+          <li><a class="d-inline-flex align-items-center rounded" href="#comunita_informazioni">Informazioni importanti</a></li>
+          <li><a class="d-inline-flex align-items-center rounded" href="#comunita_criticita">Criticit&agrave;</a></li>
+          <li><a class="d-inline-flex align-items-center rounded" href="#comunita_spunti">Spunti di riflessione</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</aside>
+<div class="bd-cheatsheet container-fluid bg-body">
+  <section id="esperti_lis">
+    <h2 class="sticky-xl-top fw-bold pt-3 pt-xl-5 pb-2 pb-xl-3">Esperti LIS</h2>
+
+    <article class="my-3" id="esperti_anagrafica">
+      <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+        <h3>Anagrafica</h3>
+      </div>
+
+      <div>
+        <div class="bd-example">
+          <p class="lead">
+            1.	Potrebbe presentarsi, per favore? (nome e cognome)
+<br /><br />2.	Qual è la sua professione attuale e da quanto tempo lavora in questo campo?
+<br><br />3.	Quanti anni ha e dove ha ricevuto la sua educazione/formazione?
+<br><br />4.	Quali sono i suoi interessi al di fuori del lavoro?
+
+          </p>
+        </div>
+    </article>
+    <hr>
+    <article class="my-3" id="esperti_informazioni">
+      <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+        <h3>Informazioni importanti</h3>
+      </div>
+
+      <div>
+        <div class="bd-example">
+          <p class="lead">
+            1.	Come e perché si è avvicinata alla LIS?
+            <br /><br />2.	Quali esperienze ritiene più significative nel suo percorso con la LIS?
+            <br /><br />3.	Quali sono, secondo lei, le principali sfide nella comunicazione tra udenti e non udenti?
+            <br /><br />4.	Ha avuto esperienze con tecnologie di traduzione della LIS o altre tecnologie assistive? Se sì, quali?
+            <br /><br />5.	Secondo lei, quali sono gli aspetti fondamentali che una tecnologia di traduzione della LIS dovrebbe avere per essere efficace?
+
+
+          </p>
+        </div>
+    </article>
+    <hr>
+    <article class="my-3" id="esperti_criticita">
+      <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+        <h3>Criticità</h3>
+      </div>
+
+      <div>
+        <div>
+          <div class="bd-example">
+            <p class="lead">
+              1.	Quali sono le principali difficoltà che ha riscontrato nell'insegnamento o nell'uso della LIS?
+              <br /><br />2.	Ci sono stati momenti in cui ha sentito che la tecnologia esistente non era adeguata per supportare la comunicazione in LIS?
+              <br /><br />3.	Quali sono le strategie più efficaci per affrontare le sfide legate alla variazione regionale della LIS e garantire una comunicazione inclusiva e comprensibile per tutti?
+              <br /><br />4.	Quali sono i principali errori o malintesi che possono verificarsi nella traduzione della LIS in linguaggio parlato?
+
+  
+            </p>
+          </div>
+      </div>
+    </article>
+    <hr>
+    <article class="my-3" id="esperti_spunti">
+      <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+        <h3>Spunti di riflessione e aree di miglioramento</h3>
+      </div>
+
+      <div>
+        <div>
+          <div class="bd-example">
+            <p class="lead">
+              1.	Quali miglioramenti suggerirebbe per le tecnologie di traduzione della LIS attualmente disponibili?
+              <br /><br />2.	Ci sono aspetti specifici dell'apprendimento o dell'insegnamento della LIS che ritiene dovrebbero essere migliorati attraverso l'uso della tecnologia?
+              <br /><br />3.	Come immagina il futuro della comunicazione tra udenti e non udenti grazie all'avanzamento tecnologico?
+              <br /><br />4.	C'è qualcos'altro che vorrebbe aggiungere o che ritiene importante discutere riguardo allo sviluppo di tecnologie assistive per la LIS?
+
+  
+            </p>
+          </div>
+      </div>
+    </article>
+  </section>
+  <section id="tecnico">
+    <h2 class="sticky-xl-top fw-bold pt-3 pt-xl-5 pb-2 pb-xl-3">Tecnico informatico</h2>
+
+    <article class="my-3" id="tecnico_anagrafica">
+      <div class="bd-heading sticky-xl-top align-self-start pt-5 mt-5 mb-3 mt-xl-0 mb-xl-2">
+        <h3>Anagrafica</h3>
+      </div>
+
+      <div>
+        <div class="bd-example">
+          <p class="lead">
+            1.	Potresti descrivere la tua esperienza professionale e le tecnologie con cui lavori più frequentemente?
+            <br /><br />2.	Come definiresti il tuo approccio o filosofia quando ti confronti con nuove sfide tecnologiche?
+            <br /><br />3.	Hai mai lavorato a progetti che richiedevano la creazione di soluzioni per persone con disabilità? Se sì, quali sfide hai incontrato e come le hai superate?
+
+
+          </p>
+        </div>
+    </article>
+    <hr>
+    <article class="my-3" id="tecnico_informazioni">
+      <div class="bd-heading sticky-xl-top align-self-start pt-5 mt-5 mb-3 mt-xl-0 mb-xl-2">
+        <h3>Informazioni importanti</h3>
+      </div>
+
+      <div>
+        <div class="bd-example">
+          <p class="lead">
+            1.	Quali tecnologie e framework ritieni più promettenti per lo sviluppo di un'applicazione che traduce la LIS in testo scritto?
+            <br /><br />2.	Secondo te, quali sono i principali ostacoli tecnici nello sviluppo di un'applicazione di questo tipo?
+            <br /><br />3.	Esistono standard o protocolli esistenti che credi possano facilitare l'integrazione della traduzione della LIS in ambienti digitali?
+
+          </p>
+        </div>
+    </article>
+    <hr>
+    <article class="my-3" id="tecnico_criticita">
+      <div class="bd-heading sticky-xl-top align-self-start pt-5 mt-5 mb-3 mt-xl-0 mb-xl-2">
+        <h3>Criticità</h3>
+      </div>
+
+      <div>
+        <div>
+          <div class="bd-example">
+            <p class="lead">
+              1.	Quali potrebbero essere le maggiori limitazioni delle tecnologie attuali per il riconoscimento e la traduzione dei gesti?
+              <br /><br />2.	Come valuti l'importanza della precisione nella traduzione dei segni rispetto alla velocità di elaborazione dell'applicazione?
+              <br /><br />3.	Ci sono particolari considerazioni sulla privacy o sulla sicurezza dei dati che dovremmo tenere in considerazione durante lo sviluppo?
+
+  
+            </p>
+          </div>
+      </div>
+    </article>
+    <hr>
+    <article class="my-3" id="tecnico_spunti">
+      <div class="bd-heading sticky-xl-top align-self-start pt-5 mt-5 mb-3 mt-xl-0 mb-xl-2">
+        <h3>Spunti di riflessione e aree di miglioramento</h3>
+      </div>
+
+      <div>
+        <div>
+          <div class="bd-example">
+            <p class="lead">
+              1.	Quali potrebbero essere le implicazioni a lungo termine dell'introduzione di tecnologie avanzate di traduzione della LIS in contesti quotidiani?
+              <br /><br />2.	In che modo possiamo assicurarci che l'app sia accessibile e utilizzabile da tutte le persone che utilizzano la LIS, indipendentemente dal loro livello di abilità tecnologica?
+              <br /><br />3.	Quali sono, secondo te, le aree di miglioramento o le funzionalità che non sono state ancora pienamente esplorate nelle applicazioni di traduzione del linguaggio dei segni?
+              <br /><br />4.	Hai suggerimenti su come potremmo testare efficacemente l'app con la comunità LIS per assicurarci che soddisfi le loro esigenze?
+
+  
+            </p>
+          </div>
+      </div>
+    </article>
+  </section>
+
+  <section id="istituzioni">
+    <h2 class="sticky-xl-top fw-bold pt-3 pt-xl-5 pb-2 pb-xl-3">Istituzioni educative</h2>
+
+    <article class="my-3" id="istituzioni_anagrafica">
+      <div class="bd-heading sticky-xl-top align-self-start pt-5 mt-5 mb-3 mt-xl-0 mb-xl-2">
+        <h3>Anagrafica</h3>
+      </div>
+
+      <div>
+        <div class="bd-example">
+          <p class="lead">
+            1.	Quali sono i livelli di istruzione offerti dalla vostra istituzione (scuola materna, elementare, media, superiore)?
+
+          </p>
+        </div>
+    </article>
+    <hr>
+    <article class="my-3" id="istituzioni_informazioni">
+      <div class="bd-heading sticky-xl-top align-self-start pt-5 mt-5 mb-3 mt-xl-0 mb-xl-2">
+        <h3>Informazioni importanti</h3>
+      </div>
+
+      <div>
+        <div class="bd-example">
+          <p class="lead">
+            1.	Quali risorse o supporto tecnico utilizzate attualmente per facilitare la comunicazione con gli studenti sordi?
+            <br /><br />2.	 Avete personale o esperti specializzati nell’insegnamento della LIS presso la vostra istituzione?
+            <br /><br />3.	 Quali sono le attuali modalità di interazione e comunicazione con gli studenti sordi durante le lezioni e attività extracurricolari?
+
+          </p>
+        </div>
+    </article>
+    <hr>
+    <article class="my-3" id="istituzioni_criticita">
+      <div class="bd-heading sticky-xl-top align-self-start pt-5 mt-5 mb-3 mt-xl-0 mb-xl-2">
+        <h3>Criticità</h3>
+      </div>
+
+      <div>
+        <div>
+          <div class="bd-example">
+            <p class="lead">
+              1.	Quali sono le difficoltà più comuni incontrate dal personale docente nell’interagire con gli studenti durante le lezioni?
+              <br /><br />2.	Come gestite le situazioni in cui gli studenti sordi si sentono emarginati o esclusi dall’ambiente scolastico/educativo?
+
+  
+            </p>
+          </div>
+      </div>
+    </article>
+    <hr>
+    <article class="my-3" id="istituzioni_spunti">
+      <div class="bd-heading sticky-xl-top align-self-start pt-5 mt-5 mb-3 mt-xl-0 mb-xl-2">
+        <h3>Spunti di riflessione e aree di miglioramento</h3>
+      </div>
+
+      <div>
+        <div>
+          <div class="bd-example">
+            <p class="lead">
+              1.	Quali sono le vostre riflessioni sull’efficacia delle attuali strategie di comunicazione utilizzate con gli studenti sordi?
+              <br /><br />2.	 Avete considerato l’implementazione di nuove tecnologie o strumenti per migliorare l’accessibilità e la comunicazione con gli studenti sordi?
+
+  
+            </p>
+          </div>
+      </div>
+    </article>
+  </section>
+
+  <section id="persone_sorde">
+    <h2 class="sticky-xl-top fw-bold pt-3 pt-xl-5 pb-2 pb-xl-3">Persone sorde</h2>
+    <article class="my-3" id="persone_sorde_informazioni">
+      <div class="bd-heading sticky-xl-top align-self-start pt-5 mt-5 mb-3 mt-xl-0 mb-xl-2">
+        <h3>Informazioni importanti</h3>
+      </div>
+
+      <div>
+        <div class="bd-example">
+          <p class="lead">
+            1.	Immagina una giornata tipo nella tua vita. In che momenti pensi che potresti trarre maggior vantaggio dall’utilizzo di uno strumento di traduzione istantanea della LIS? Per esempio, incontri di lavoro, interazioni sociali informali, situazioni di emergenza, viaggi, ecc.?
+
+          </p>
+        </div>
+    </article>
+    <hr>
+    <article class="my-3" id="persone_sorde_criticita">
+      <div class="bd-heading sticky-xl-top align-self-start pt-5 mt-5 mb-3 mt-xl-0 mb-xl-2">
+        <h3>Criticità</h3>
+      </div>
+
+      <div>
+        <div>
+          <div class="bd-example">
+            <p class="lead">
+              1.	Hai avuto esperienze passate con app di traduzioni della Lingua Italiana dei Segni?
+              <br /><br />2.	Se sì, potresti condividere quali aspetti ti sono risultati più utili e se hai riscontrato qualche difficoltà nell’utilizzo di queste app?
+
+  
+            </p>
+          </div>
+      </div>
+    </article>
+    <hr>
+    <article class="my-3" id="persone_sorde_spunti">
+      <div class="bd-heading sticky-xl-top align-self-start pt-5 mt-5 mb-3 mt-xl-0 mb-xl-2">
+        <h3>Spunti di riflessione e aree di miglioramento</h3>
+      </div>
+
+      <div>
+        <div>
+          <div class="bd-example">
+            <p class="lead">
+              1.	Immaginando di utilizzare un nuovo strumento di traduzione istantanea della lingua dei segni, quali vantaggi ti aspetteresti rispetto alle tecnologie esistenti?
+              <br /><br />2.	Quali caratteristiche pensi che dovrebbero essere prioritarie per renderla accattivante e utile?
+              <br /><br />3.	Saresti disposto a partecipare attivamente allo sviluppo dell’app? Se sì, in che modo preferiresti essere coinvolto? (Ad esempio: testare prototipi, fornire feedback regolarmente, partecipare a gruppi di discussione, ecc.)
+
+  
+            </p>
+          </div>
+      </div>
+    </article>
+  </section>
+
+  <section id="sanita">
+    <h2 class="sticky-xl-top fw-bold pt-3 pt-xl-5 pb-2 pb-xl-3">Sanità</h2>
+
+    <article class="my-3" id="sanita_anagrafica">
+      <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+        <h3>Anagrafica</h3>
+      </div>
+
+      <div>
+        <div class="bd-example">
+          <p class="lead">
+            1.	Potrebbe descrivere la sua esperienza professionale e il suo ruolo all'interno del contesto sanitario?
+            <br /><br />2.	Ha avuto esperienze precedenti con pazienti sordi o con la Lingua dei Segni Italiana? Se sì, in quale contesto?
+            <br /><br />3.	Qual è la sua familiarità con la tecnologia e le applicazioni di assistenza sanitaria digitale?
+
+
+          </p>
+        </div>
+    </article>
+    <hr>
+    <article class="my-3" id="sanita_informazioni">
+      <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+        <h3>Informazioni importanti</h3>
+      </div>
+
+      <div>
+        <div class="bd-example">
+          <p class="lead">
+            1.	Quali sono le procedure standard per l’accoglienza e la comunicazione con i pazienti sordi nella vostra struttura?
+            <br /><br />2.	Come vengono gestite le informazioni mediche sensibili quando si comunica con un paziente sordo?
+            <br /><br />3.	Nella sua esperienza, quali sono le principali barriere comunicative tra il personale sanitario e i pazienti sordi?
+            <br /><br />4.	Quanto spesso si trova a interagire con pazienti che utilizzano la LIS?
+
+          </p>
+        </div>
+    </article>
+    <hr>
+    <article class="my-3" id="sanita_criticita">
+      <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+        <h3>Criticità</h3>
+      </div>
+
+      <div>
+        <div>
+          <div class="bd-example">
+            <p class="lead">
+              1.	Quali sono le principali sfide che incontrate nella comunicazione con i pazienti sordi?
+              <br /><br />2.	Ci sono stati episodi in cui la barriera linguistica ha influenzato negativamente l’assistenza al paziente?
+              <br /><br />3.	Secondo lei, quali sono gli aspetti della LIS che una app di traduzione potrebbe trovare più difficile da interpretare o tradurre?
+
+  
+            </p>
+          </div>
+      </div>
+    </article>
+    <hr>
+    <article class="my-3" id="sanita_spunti">
+      <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+        <h3>Spunti di riflessione e aree di miglioramento</h3>
+      </div>
+
+      <div>
+        <div>
+          <div class="bd-example">
+            <p class="lead">
+              1.	Quali funzionalità ritiene indispensabili per un'app che traduce la LIS in testo scritto, per renderla realmente utile nel contesto sanitario?
+              <br /><br />2.	Come pensa che una tale app possa migliorare l'assistenza sanitaria per i pazienti sordi?
+              <br /><br />3.	Ha suggerimenti su come l'app dovrebbe essere testata o implementata per assicurarsi che sia efficace e user-friendly per il personale sanitario e i pazienti?
+              <br /><br />4.	Esistono altre tecnologie o strumenti di assistenza che ritiene sarebbero utili da integrare con questa app? Esistono altre tecnologie o strumenti di assistenza che ritiene sarebbero utili da integrare con questa app?
+
+  
+            </p>
+          </div>
+      </div>
+    </article>
+  </section>
+
+  <section id="caregiver">
+    <h2 class="sticky-xl-top fw-bold pt-3 pt-xl-5 pb-2 pb-xl-3">Familiari e caregiver</h2>
+
+    <article class="my-3" id="caregiver_anagrafica">
+      <div class="bd-heading sticky-xl-top align-self-start pt-5 mt-5 mb-3 mt-xl-0 mb-xl-2">
+        <h3>Anagrafica</h3>
+      </div>
+
+      <div>
+        <div class="bd-example">
+          <p class="lead">
+            1.	Quali aspettative avete da una futura tecnologia di traduzione della lingua dei segni?
+            <br /><br />2.	Quali caratteristiche ritenete essenziali per una tale tecnologia?
+
+
+          </p>
+        </div>
+    </article>
+    <hr>
+    <article class="my-3" id="caregiver_informazioni">
+      <div class="bd-heading sticky-xl-top align-self-start pt-5 mt-5 mb-3 mt-xl-0 mb-xl-2">
+        <h3>Informazioni importanti</h3>
+      </div>
+
+      <div>
+        <div class="bd-example">
+          <p class="lead">
+            1.	Come pensate che questa tecnologia possa migliorare la vostra comunicazione quotidiana? 
+            <br /><br />2.	In che modo la tecnologia dovrebbe integrarsi con altri dispositivi o servizi che già utilizzate?  
+            <br /><br />3.	Avete preferenze specifiche riguardo alla modalità di interazione con la tecnologia (ad esempio, tramite voce, testo, gesti)? 
+
+
+          </p>
+        </div>
+    </article>
+    <hr>
+    <article class="my-3" id="caregiver_criticita">
+      <div class="bd-heading sticky-xl-top align-self-start pt-5 mt-5 mb-3 mt-xl-0 mb-xl-2">
+        <h3>Criticità</h3>
+      </div>
+
+      <div>
+        <div>
+          <div class="bd-example">
+            <p class="lead">
+              1.	Quali sono le principali difficoltà che sperate vengano risolte con l’introduzione di questa tecnologia?  
+              <br /><br />2.	Qual è il livello di accuratezza che ritenete accettabile per la traduzione della lingua dei segni? 
+
+            </p>
+          </div>
+      </div>
+    </article>
+    <hr>
+    <article class="my-3" id="caregiver_spunti">
+      <div class="bd-heading sticky-xl-top align-self-start pt-5 mt-5 mb-3 mt-xl-0 mb-xl-2">
+        <h3>Spunti di riflessione e aree di miglioramento</h3>
+      </div>
+
+      <div>
+        <div>
+          <div class="bd-example">
+            <p class="lead">
+              1.	Come immaginate che questa tecnologia possa influenzare l’apprendimento della lingua dei segni da parte di chi non è non udente?  
+              <br /><br />2.	Quali considerazioni etiche pensate siano importanti quando si sviluppa una tecnologia di questo tipo?  
+              <br /><br />3.	Sareste disposti a partecipare a un programma di test per contribuire allo sviluppo di questa tecnologia?
+
+  
+            </p>
+          </div>
+      </div>
+    </article>
+  </section>
+
+  <section id="pa">
+    <h2 class="sticky-xl-top fw-bold pt-3 pt-xl-5 pb-2 pb-xl-3">Pubbliche Amministrazioni</h2>
+
+    <article class="my-3" id="pa_anagrafica">
+      <div class="bd-heading sticky-xl-top align-self-start pt-5 mt-5 mb-3 mt-xl-0 mb-xl-2">
+        <h3>Anagrafica</h3>
+      </div>
+
+      <div>
+        <div class="bd-example">
+          <p class="lead">
+            1.	Potrebbe descrivere la sua esperienza professionale e il suo ruolo all'interno delle pubbliche amministrazioni?
+            <br /><br />2.	Ha avuto esperienze precedenti con pazienti sordi o con la Lingua dei Segni Italiana? Se sì, in quale contesto?
+            <br /><br />3.	Hai esperienze precedenti nell'utilizzo di strumenti simili o nell'ambito della traduzione della LIS?
+
+
+          </p>
+        </div>
+    </article>
+    <hr>
+    <article class="my-3" id="pa_informazioni">
+      <div class="bd-heading sticky-xl-top align-self-start pt-5 mt-5 mb-3 mt-xl-0 mb-xl-2">
+        <h3>Informazioni importanti</h3>
+      </div>
+
+      <div>
+        <div class="bd-example">
+          <p class="lead">
+            1.	Cosa pensi che sarebbe importante comunicare ai tuoi colleghi o superiori riguardo all'adozione di un'applicazione di traduzione della LIS?
+            <br /><br />2.	Quali altre considerazioni o domande ritieni importanti affrontare riguardo all'integrazione di un'applicazione di traduzione della LIS nella pubblica amministrazione?
+
+
+          </p>
+        </div>
+    </article>
+    <hr>
+    <article class="my-3" id="pa_criticita">
+      <div class="bd-heading sticky-xl-top align-self-start pt-5 mt-5 mb-3 mt-xl-0 mb-xl-2">
+        <h3>Criticità</h3>
+      </div>
+
+      <div>
+        <div>
+          <div class="bd-example">
+            <p class="lead">
+              1.	Hai già familiarità con altre soluzioni tecnologiche per migliorare l'accessibilità e la comunicazione con le persone sorde o non udenti? Se sì, quali sono i tuoi feedback su queste soluzioni?
+              <br /><br />2.	Quali sfide specifiche pensi possano sorgere nell'adozione di un'applicazione di traduzione della LIS nella tua area di competenza?
+              <br /><br />3.	Hai delle preoccupazioni riguardo all'efficacia o all'affidabilità dell'applicazione di traduzione della LIS? Se sì, quali sono e come pensi possano essere affrontate?
+
+  
+            </p>
+          </div>
+      </div>
+    </article>
+    <hr>
+    <article class="my-3" id="pa_spunti">
+      <div class="bd-heading sticky-xl-top align-self-start pt-5 mt-5 mb-3 mt-xl-0 mb-xl-2">
+        <h3>Spunti di riflessione e aree di miglioramento</h3>
+      </div>
+
+      <div>
+        <div>
+          <div class="bd-example">
+            <p class="lead">
+              1.	Come pensi che l'implementazione di un'applicazione di traduzione della LIS possa influenzare la tua routine lavorativa quotidiana?
+              <br /><br />2.	Quali funzionalità o caratteristiche pensi siano fondamentali per un'applicazione di traduzione della LIS per renderla utile nel tuo ambiente di lavoro?
+              <br /><br />3.	Quali suggerimenti o consigli offriresti al team che sta sviluppando un'applicazione di traduzione della LIS per garantire il massimo beneficio possibile per gli utenti finali?
+              <br /><br />4.	Come immagini che l'uso di un'applicazione di traduzione della LIS possa contribuire a migliorare la percezione pubblica della tua organizzazione in termini di inclusività e supporto alla diversità?
+              <br /><br />5.	In che modo pensi che l'utilizzo di un'applicazione di traduzione della LIS possa influenzare l'accessibilità e l'equità dei servizi offerti dalla pubblica amministrazione?
+
+  
+            </p>
+          </div>
+      </div>
+    </article>
+  </section>
+
+  <section id="comunita">
+    <h2 class="sticky-xl-top fw-bold pt-3 pt-xl-5 pb-2 pb-xl-3">Organizzazioni di comunità</h2>
+
+    <article class="my-3" id="comunita_anagrafica">
+      <div class="bd-heading sticky-xl-top align-self-start pt-5 mt-5 mb-3 mt-xl-0 mb-xl-2">
+        <h3>Anagrafica</h3>
+      </div>
+
+      <div>
+        <div class="bd-example">
+          <p class="lead">
+            1.	Potete descrivere brevemente la vostra organizzazione di comunità e il suo mandato riguardo alla promozione dei diritti delle persone sorde?
+            <br /><br />2.	Da quanto tempo la vostra organizzazione è attiva e quali sono stati i principali obiettivi raggiunti finora?
+
+
+          </p>
+        </div>
+    </article>
+    <hr>
+    <article class="my-3" id="comunita_informazioni">
+      <div class="bd-heading sticky-xl-top align-self-start pt-5 mt-5 mb-3 mt-xl-0 mb-xl-2">
+        <h3>Informazioni importanti</h3>
+      </div>
+
+      <div>
+        <div class="bd-example">
+          <p class="lead">
+            1.	Quali sono i principali servizi o iniziative che la vostra organizzazione offre per supportare le persone sorde che utilizzano la LIS?
+            <br /><br />2.	In che modo queste iniziative promuovono l'accessibilità e l'inclusione della comunità sorda?
+
+
+          </p>
+        </div>
+    </article>
+    <hr>
+    <article class="my-3" id="comunita_criticita">
+      <div class="bd-heading sticky-xl-top align-self-start pt-5 mt-5 mb-3 mt-xl-0 mb-xl-2">
+        <h3>Criticità</h3>
+      </div>
+
+      <div>
+        <div>
+          <div class="bd-example">
+            <p class="lead">
+              1.	Quali sono le principali sfide che la comunità sorda affronta nella vostra area di competenza?
+              <br /><br />2.	Quali sono i bisogni specifici della comunità sorda che la vostra organizzazione cerca di soddisfare?
+
+  
+            </p>
+          </div>
+      </div>
+    </article>
+    <hr>
+    <article class="my-3" id="comunita_spunti">
+      <div class="bd-heading sticky-xl-top align-self-start pt-5 mt-5 mb-3 mt-xl-0 mb-xl-2">
+        <h3>Spunti di riflessione e aree di miglioramento</h3>
+      </div>
+
+      <div>
+        <div>
+          <div class="bd-example">
+            <p class="lead">
+              1.	In che modo coinvolgete attivamente la comunità sorda nelle attività e nelle decisioni della vostra organizzazione?
+              <br /><br />2.	Qual è il ruolo della partecipazione della comunità nel plasmare le vostre iniziative?
+
+  
+            </p>
+          </div>
+      </div>
+    </article>
+  </section>
+    <script src="https://silentspee.ch/interviews_qa/assets/bootstrap.bundle.min.js"></script>
+
+      <script src="https://silentspee.ch/interviews_qa/questions.js"></script>
+  </body>
+</html>
