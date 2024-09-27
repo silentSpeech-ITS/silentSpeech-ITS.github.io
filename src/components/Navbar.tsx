@@ -15,10 +15,10 @@ export const Navbar = () => {
 
   return (
     <div className="w-full">
-      <nav className="container relative flex flex-wrap items-center justify-between p-8 mx-auto lg:justify-between xl:px-1">
+      <nav className="container relative flex flex-wrap items-center justify-between p-2 sm:p-8 mx-auto lg:justify-between xl:px-1">
         {/* Logo  */}
         <Link href="/">
-          <span className="flex items-center space-x-2 text-4xl font-medium text-pancho-400 dark:text-pancho-300">
+          <span className="flex items-center space-x-2 text-3xl sm:text-4xl font-medium text-pancho-400 dark:text-pancho-300">
               <span>
                 {/* TODO: Riproduci solo onHover */}
                  <Image
@@ -77,7 +77,7 @@ export const Navbar = () => {
                       </Link>
                     ))}
                     <Link href="/" className="w-full px-6 py-2 mt-3 text-center text-white bg-pancho-600 rounded-md lg:ml-5">         
-                        Get Started
+                        Placeholder
                     </Link>
                   </>
                 </Disclosure.Panel>
