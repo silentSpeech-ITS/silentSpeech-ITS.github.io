@@ -13,12 +13,12 @@ export function Footer() {
           <div className="lg:col-span-2">
             <div>
               {" "}
-              <Link href="/silentSpeech-ITS.github.io/">
+              <Link href="/">
           <span className="flex items-center space-x-2 text-4xl font-medium text-pancho-400 dark:text-pancho-300">
               <span>
                 {/* TODO: Riproduci solo onHover */}
                  <Image
-                  src="/silentSpeech-ITS.github.io/img/logo.gif"
+                  src=".//img/logo.gif"
                   width="128"
                   alt="N"
                   height="128"
@@ -40,7 +40,7 @@ export function Footer() {
               {navigation.map((item, index) => (
                 <Link
                   key={index}
-                  href="/silentSpeech-ITS.github.io/"
+                  href="/"
                   className="w-full px-4 py-2 text-gray-500 rounded-md dark:text-gray-300 hover:text-pancho-500 focus:text-pancho-500 focus:bg-pancho-100 focus:outline-none dark:focus:bg-trueGray-700"
                 >
                   {item}
@@ -53,7 +53,7 @@ export function Footer() {
               {legal.map((item, index) => (
                 <Link
                   key={index}
-                  href="/silentSpeech-ITS.github.io/"
+                  href="/"
                   className="w-full px-4 py-2 text-gray-500 rounded-md dark:text-gray-300 hover:text-pancho-500 focus:text-pancho-500 focus:bg-pancho-100 focus:outline-none dark:focus:bg-trueGray-700"
                 >
                   {item}

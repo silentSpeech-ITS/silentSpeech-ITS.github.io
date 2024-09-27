@@ -22,7 +22,7 @@ export const Navbar = () => {
               <span>
                 {/* TODO: Riproduci solo onHover */}
                  <Image
-                  src="/silentSpeech-ITS.github.io/img/logo.gif"
+                  src=".//img/logo.gif"
                   width="128"
                   alt="N"
                   height="128"

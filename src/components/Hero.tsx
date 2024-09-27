@@ -21,7 +21,7 @@ export const Hero = () => {
 
             <div className="flex flex-col items-start space-y-3 sm:space-x-4 sm:space-y-0 sm:items-center sm:flex-row">
               <Link
-                href="/silentSpeech-ITS.github.io/#presentazione-yt"
+                href="/#presentazione-yt"
                 
                 rel="noopener"
                 className="px-8 py-4 text-lg font-bold text-center text-white bg-pancho-400 rounded-md ">
@@ -63,7 +63,7 @@ export const Hero = () => {
 
 function ApuliaDigitalLogo() {
   return(
-    <Image src={"/silentSpeech-ITS.github.io/img/brands/ad-old.png"} alt={""} width={300} height={200}>
+    <Image src={".//img/brands/ad-old.png"} alt={""} width={300} height={200}>
       
     </Image>
   );
