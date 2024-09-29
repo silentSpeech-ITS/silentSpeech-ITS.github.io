@@ -63,7 +63,7 @@ export const Hero = () => {
 
 function ApuliaDigitalLogo() {
   return(
-    <Image src={".//img/brands/ad-old.png"} alt={""} width={300} height={200}>
+    <Image src={"./img/brands/ad.png"} alt={""} width={300} height={200}>
       
     </Image>
   );
