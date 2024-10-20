@@ -10,13 +10,11 @@ export const Hero = () => {
         <div className="flex items-center w-full lg:w-1/2">
           <div className="max-w-2xl mb-8">
             <h1 className="text-3xl font-bold leading-snug tracking-tight text-gray-800 lg:text-5xl lg:leading-tight xl:text-7xl xl:leading-tight dark:text-white">
-              Una nuova forma di comunicazione per le persone sorde.
+              Unlock a new language without speaking a word.
             </h1>
             <p className="py-5 text-xl leading-normal text-gray-500 lg:text-xl xl:text-2xl dark:text-gray-300">
-            Promuoviamo la diffusione della Lingua Italiana dei Segni (LIS)
-            ed identifichiamo le opportunità per migliorare l'accessibilità
-            con l'utilizzo di nuove tecnologie.
-
+              Silentspeech transforms Italian Sign Language learning into an interactive adventure.
+              Master signs through cutting-edge tech and gamified lessons, guided by a friendly virtual tutor.
             </p>
 
             <div className="flex flex-col items-start space-y-3 sm:space-x-4 sm:space-y-0 sm:items-center sm:flex-row">
