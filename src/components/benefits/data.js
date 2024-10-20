@@ -8,13 +8,14 @@ import {
     SunIcon,
   } from "@heroicons/react/24/solid";
   
-  import benefitOneImg from "../../../public/img/brands/ad.png";
-  import benefitTwoImg from "../../../public/img/brands/ad.png";
+  import benefitOneImg from "../../../public/img/logo.gif";
+  import benefitTwoImg from "../../../public/games/signpocalypse-logo.png";
   
   const benefitOne = {
     title: "A new approach to learning.",
     desc: "Silentspeech combines cutting-edge technologies such as Google MediaPipe for sign detection, LSTM (long short-term memory) neural networks for interpretation and Unreal Engine to model and animate a virtual avatar that guides users through interactive excercises.",
     image: benefitOneImg,
+    invert: true,
     bullets: [
       {
         title: "Real-time sign detection",
@@ -43,6 +44,7 @@ import {
     title: "Signpocalypse",
     desc: "At the fair, users will be able to test Signpocalypse, an arcade-style shooter game that combines LIS (Italian Sign Language) recognition with classic arcade gameplay.",
     image: benefitTwoImg,
+    invert: false,
     bullets: [
       {
         title: "Behold enemies.",

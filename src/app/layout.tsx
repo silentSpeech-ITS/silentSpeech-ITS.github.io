@@ -10,8 +10,8 @@ import { Footer } from "@/components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Silent Speech",
-  description: "Una nuova forma di comunicazione per le persone sorde.",
+  title: "Silentspeech",
+  description: "Real-time sign language learning.",
 };
 
 export default function RootLayout({

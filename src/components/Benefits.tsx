@@ -3,9 +3,11 @@ import React from "react";
 import { Container }  from "@/components/Container";
 
 interface BenefitsProps {
+  id?: string,
   imgPos?: "left" | "right";
   data: {
     imgPos?: "left" | "right";
+    invert?: boolean;
     title: string;
     desc: string;
     image: any;
@@ -19,7 +21,7 @@ interface BenefitsProps {
 export const Benefits = (props: Readonly<BenefitsProps>) => {
   const { data } = props;
   return (
-      <Container className="flex flex-wrap mb-20 lg:gap-10 lg:flex-nowrap ">
+      <Container id={props.id} className="flex flex-wrap mb-20 lg:gap-10 lg:flex-nowrap ">
         <div
           className={`flex items-center justify-center w-full lg:w-1/2 ${
             props.imgPos === "right" ? "lg:order-1" : ""
@@ -30,7 +32,7 @@ export const Benefits = (props: Readonly<BenefitsProps>) => {
               width={521}
               height={521}
               alt="Benefits"
-              className={"object-cover"}
+              className={`object-cover ${data.invert ? "dark:invert" : ""}`}
               placeholder="blur"
               blurDataURL={data.image.src}
             />

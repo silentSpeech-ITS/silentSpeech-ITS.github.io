@@ -19,11 +19,11 @@ export const Hero = () => {
 
             <div className="flex flex-col items-start space-y-3 sm:space-x-4 sm:space-y-0 sm:items-center sm:flex-row">
               <Link
-                href="/#presentazione-yt"
+                href="/#our-approach"
                 
                 rel="noopener"
                 className="px-8 py-4 text-lg font-bold text-center text-white bg-pancho-400 rounded-md ">
-                Guarda la presentazione
+                Learn more
               </Link>
             </div>
           </div>
@@ -45,7 +45,7 @@ export const Hero = () => {
       <Container>
         <div className="flex flex-col justify-center">
           <div className="text-xl text-center text-gray-700 dark:text-white">
-            Con il supporto di fantastici <span className="font-bold text-pancho-600">partner</span>
+            With the help of awesome <span className="font-bold text-pancho-600">partners</span>
           </div>
 
           <div className="flex flex-wrap justify-center gap-5 mt-10 md:justify-around">
@@ -61,7 +61,7 @@ export const Hero = () => {
 
 function ApuliaDigitalLogo() {
   return(
-    <Image src={"./img/brands/ad.png"} alt={""} width={300} height={200}>
+    <Image src={"./img/brands/ad.png"} alt={""} width={150} height={150}>
       
     </Image>
   );

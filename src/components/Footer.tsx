@@ -4,8 +4,32 @@ import React from "react";
 import { Container } from "@/components/Container";
 
 export function Footer() {
-  const navigation = ["Cos'è", "Visione", "Chi siamo", "Placeholder", "Placeholder"];
-  const legal = ["Termini e condizioni", "Privacy"];
+  const navigation = [
+    "Our Approach",
+    "Goal",
+    "Gamification",
+    "Awards",
+  ];
+
+  const navigation_href = [
+    {
+      title: "Our Approach",
+      meta: "our-approach"
+    },
+    {
+      title: "Goal",
+      meta: "goal"
+    },
+    {
+      title: "Gamification",
+      meta: "gamification"
+    },
+    {
+      title: "Awards",
+      meta: "awards"
+    },
+  ]
+  const legal = ["Terms and conditions", "Privacy Policy"];
   return (
     <div className="relative">
       <Container>
@@ -31,19 +55,20 @@ export function Footer() {
             </div>
 
             <div className="max-w-md mt-4 text-gray-500 dark:text-gray-400">
-            Promuoviamo la diffusione della Lingua Italiana dei Segni (LIS) ed identifichiamo le opportunità per migliorare l'accessibilità con l'utilizzo di nuove tecnologie.
+              Silentspeech transforms Italian Sign Language learning into an interactive adventure.
+              Master signs through cutting-edge tech and gamified lessons, guided by a friendly virtual tutor.
             </div>
           </div>
 
           <div>
             <div className="flex flex-wrap w-full -mt-2 -ml-3 lg:ml-0">
-              {navigation.map((item, index) => (
+              {navigation_href.map((item, index) => (
                 <Link
                   key={index}
-                  href="/"
+                  href={`#${item.meta}`}
                   className="w-full px-4 py-2 text-gray-500 rounded-md dark:text-gray-300 hover:text-pancho-500 focus:text-pancho-500 focus:bg-pancho-100 focus:outline-none dark:focus:bg-trueGray-700"
                 >
-                  {item}
+                  {item.title}
                 </Link>
               ))}
             </div>
@@ -62,7 +87,7 @@ export function Footer() {
             </div>
           </div>
           <div className="">
-            <div>Seguici anche sui social</div>
+            <div>Social</div>
             <div className="flex mt-5 space-x-5 text-gray-400 dark:text-gray-500">
               <a
                 href="https://twitter.com/#"

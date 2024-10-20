@@ -6,12 +6,30 @@ import { Disclosure } from "@headlessui/react";
 
 export const Navbar = () => {
   const navigation = [
-    "Cos'è",
-    "Visione",
-    "Chi siamo",
-    "Placeholder",
-    "Placeholder",
+    "Our Approach",
+    "Goal",
+    "Gamification",
+    "Awards",
   ];
+
+  const navigation_href = [
+    {
+      title: "Our Approach",
+      meta: "our-approach"
+    },
+    {
+      title: "Goal",
+      meta: "goal"
+    },
+    {
+      title: "Gamification",
+      meta: "gamification"
+    },
+    {
+      title: "Awards",
+      meta: "awards"
+    },
+  ]
 
   return (
     <div className="w-full">
@@ -37,8 +55,8 @@ export const Navbar = () => {
         <div className="gap-3 nav__item mr-2 lg:flex ml-auto lg:ml-0 lg:order-2">
             <ThemeChanger />
             <div className="hidden mr-3 lg:flex nav__item">
-              <Link href="/" className="px-6 py-2 text-white bg-pancho-400 rounded-md md:ml-5 font-bold">
-                Placeholder
+              <Link href="#our-approach" className="px-6 py-2 text-white bg-pancho-400 rounded-md md:ml-5 font-bold">
+                Learn more
               </Link>
             </div>
         </div>
@@ -71,13 +89,13 @@ export const Navbar = () => {
 
                 <Disclosure.Panel className="flex flex-wrap w-full my-5 lg:hidden">
                   <>
-                    {navigation.map((item, index) => (
-                      <Link key={index} href="/" className="w-full px-4 py-2 -ml-4 text-gray-500 rounded-md dark:text-gray-300 hover:text-pancho-500 focus:text-pancho-500 focus:bg-pancho-100 dark:focus:bg-gray-800 focus:outline-none">
-                          {item}
+                    {navigation_href.map((item, index) => (
+                      <Link key={index} href={`#${item.meta}`} className="w-full px-4 py-2 -ml-4 text-gray-500 rounded-md dark:text-gray-300 hover:text-pancho-500 focus:text-pancho-500 focus:bg-pancho-100 dark:focus:bg-gray-800 focus:outline-none">
+                          {item.title}
                       </Link>
                     ))}
-                    <Link href="/" className="w-full px-6 py-2 mt-3 text-center text-white bg-pancho-600 rounded-md lg:ml-5">         
-                        Placeholder
+                    <Link href="#our-approach" className="w-full px-6 py-2 mt-3 text-center text-white bg-pancho-600 rounded-md lg:ml-5">         
+                        Learn more
                     </Link>
                   </>
                 </Disclosure.Panel>
@@ -88,10 +106,10 @@ export const Navbar = () => {
         {/* menu  */}
         <div className="hidden text-center lg:flex lg:items-center">
           <ul className="items-center justify-end flex-1 pt-6 list-none lg:pt-0 lg:flex">
-            {navigation.map((menu, index) => (
+            {navigation_href.map((menu, index) => (
               <li className="mr-3 nav__item" key={index}>
-                <Link href="/" className="inline-block px-4 py-2 text-lg font-normal text-gray-800 no-underline rounded-md dark:text-gray-200 dark:hover:text-pancho-300 hover:text-pancho-400 focus:text-pancho-400 focus:bg-pancho-100 focus:outline-none dark:focus:bg-gray-800">
-                    {menu}
+                <Link href={`#${menu.meta}`} className="inline-block px-4 py-2 text-lg font-normal text-gray-800 no-underline rounded-md dark:text-gray-200 dark:hover:text-pancho-300 hover:text-pancho-400 focus:text-pancho-400 focus:bg-pancho-100 focus:outline-none dark:focus:bg-gray-800">
+                    {menu.title}
                 </Link>
               </li>
             ))}
