@@ -7,6 +7,7 @@ interface BenefitsProps {
   imgPos?: "left" | "right";
   data: {
     imgPos?: "left" | "right";
+    imgSize?: number;
     invert?: boolean;
     title: string;
     desc: string;
@@ -29,10 +30,10 @@ export const Benefits = (props: Readonly<BenefitsProps>) => {
           <div>
             <Image
               src={data.image}
-              width={521}
-              height={521}
+              width={data.imgSize && 521}
+              height={data.imgSize && 521}
               alt="Benefits"
-              className={`object-cover ${data.invert ? "dark:invert" : ""}`}
+              className={`rounded-xl object-cover ${data.invert ? "dark:invert" : ""}`}
               placeholder="blur"
               blurDataURL={data.image.src}
             />

@@ -9,7 +9,7 @@ import {
   } from "@heroicons/react/24/solid";
   
   import benefitOneImg from "../../../public/img/logo.gif";
-  import benefitTwoImg from "../../../public/games/signpocalypse-logo.png";
+  import benefitTwoImg from "../../../public/games/signpocalypse-screen.jpeg";
   
   const benefitOne = {
     title: "A new approach to learning.",
