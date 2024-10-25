@@ -6,6 +6,8 @@ import { Cta } from "@/components/Cta";
 import {benefitOne, benefitTwo} from "@/components/benefits/data";
 import { Benefits } from "@/components/Benefits";
 import Panel from "@/components/Panel";
+import { Testimonials } from "@/components/Testimonials";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -36,6 +38,19 @@ export default function Home() {
       <Video videoId="cjkRj1g94C8" />
 
       <Cta />
+
+      
+
+      <SectionTitle
+        id="contacts"
+        preTitle="Meet the team"
+        title="Get in touch with us"
+        margin={8}
+      >
+      <Link href="mailto:info@silentspee.ch">info@silentspee.ch</Link>
+      </SectionTitle>
+
+      <Testimonials />
       
     </Container>
   );

@@ -118,6 +118,8 @@ export function Footer() {
                 <Linkedin />
               </a>
             </div>
+            <div className="my-8">Email<br /><br /><Link className="text-2xl" href="mailto:info@silentspee.ch">info@silentspee.ch</Link></div>
+            
           </div>
         </div>
 

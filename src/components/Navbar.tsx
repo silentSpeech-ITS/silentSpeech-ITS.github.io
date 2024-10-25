@@ -29,6 +29,10 @@ export const Navbar = () => {
       title: "Awards",
       meta: "awards"
     },
+    {
+      title: "Contact",
+      meta: "contacts"
+    }
   ]
 
   return (

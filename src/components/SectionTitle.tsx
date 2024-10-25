@@ -6,6 +6,7 @@ interface SectionTitleProps {
   preTitle?: string;
   title?: string;
   align?: "left" | "center";
+  margin?: number,
   children?: React.ReactNode;
 }
 
@@ -13,8 +14,10 @@ export const SectionTitle = (props: Readonly<SectionTitleProps>) => {
   return (
     <Container
       id={props.id}
-      className={`my-16 flex w-full flex-col ${
+      className={`flex w-full flex-col ${
         props.align === "left" ? "" : "items-center justify-center text-center"
+      } my-${
+        props.margin === undefined ? "16" : props.margin
       }`}>
       {props.preTitle && (
         <div className="text-sm font-bold tracking-wider text-pancho-600 uppercase">
